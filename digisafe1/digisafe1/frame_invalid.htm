@@ -1,0 +1,112 @@
+<html>
+
+<head>
+<title>Invalid username or password</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--meta http-equiv="Content-Type" content="text/html; charset=windows-1252"-->
+<link href=".\bootstrap\css\bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href=".\css\footer-style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src=".\bootstrap\js\bootstrap.min.js"></script>
+<base target="_top">
+<script language="javascript">
+function check()
+{
+ var flag=true,a;
+ a=document.login.T1.value;
+ var b=document.login.T2.value;
+ if(a.length==0 || b.length==0)
+ {
+   flag=false;
+   alert("Fields cannot be empty");
+ } 
+ return flag;
+}
+</script>
+<style>
+body{
+}
+#wrapper {
+  border: 2px red solid;
+}
+.container-fluid {
+    padding: 60px 0px;
+	margin-left:120px; 
+	top:60px;
+}
+.col-sm-4 {
+	text-align:left;
+	top: -5px;
+}
+.page-title{
+	text-align:center;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper"class="container bg-default">
+<p>&nbsp;</p>
+<FORM NAME="login" ONSUBMIT="return check()" action ="login.jsp" method=post >
+
+<div class="row">
+<div class="col-sm-3" style="margin-left:30px;top:10px">
+<a href="index.html"><img src="image1/img3.jpg" class="img-rounded" class="img-responsive" alt="image1" width="180" height="80"></a>
+</div>
+
+<div class="col-lg-8  bg-info "style="padding:2px 0px; top:25px" >
+<marquee behavior="alternate"><h4><strong>Welcome to DigiSafe.. Please Sign in!<strong></h4> </marquee>
+</div>
+</div>
+</div>
+
+   
+    <div class="container-fluid bg-grey">
+<div class="row">
+<div class="col-lg-4" >
+<img class="img-responsive" src="CO-016-0513.JPG" class="img-rounded"   alt="image5"  style="margin:25px auto" />
+</div>
+<div class="col-sm-4 col-md-offset-2">
+<p><font face="Times New Roman">&nbsp; <font color="#CC3300">&nbsp;</font><span style="text-transform: capitalize"><font color="#FF0000">Incorrect 
+    username/password</font></span></font><span style="text-transform: capitalize"><font color="#FF0000">&nbsp;</font></span></p>
+<div class="page-title bg-success">
+<h3>Sign In</h3>
+			</div>
+			
+			<div class="panel-body bg-info">
+			<form action="./login" method="post">
+			<div class="form-group">	
+			<label>User Name</label>
+			<div class="input-group">
+			<input type="name" name="T1" class="form-control" placeholder="Enter your email id" required>
+			<span class="input-group-addon"><span class="glyphicon glyphicon-envelope text-primary"></span></span>
+			</div>
+			</div>
+
+<div class="form-group">
+<label>Login Password</label>
+<div class="input-group">
+<input type="password" name="T2" class="form-control" placeholder="Enter your account password" required>
+<span class="input-group-addon"><i class="fa fa-key"></i></span>
+</div>
+</div>
+			<a target="_top" href="login.jsp"><input type="submit" class="btn btn-danger"  value="Sign in" name="B1"/>
+		</div>
+		<div>
+		<a target="_top" href="forgot.htm">forgot password?</a>
+		</form>
+</div>
+</div>
+</div>
+</div>
+ <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+class A
+{
+
+A()
+{
+
+return null;
+}
+
+public static void main(String ss[])
+{
+B b=new B();
+}
+
+
+}
+
+
+class B extends A
+{
+
+
+
+
+}
